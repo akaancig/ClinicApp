@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C4D42DC-D59F-4069-84BF-C5BB3B957F15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ClinicApp2</RootNamespace>
+    <AssemblyName>ClinicApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminEkleSilGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkleSilGuncelle.Designer.cs">
+      <DependentUpon>AdminEkleSilGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPenceresi.Designer.cs">
+      <DependentUpon>AdminPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clinicDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clinicDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="clinicDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clinicDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorEkleGuncelleSilPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorEkleGuncelleSilPenceresi.Designer.cs">
+      <DependentUpon>DoktorEkleGuncelleSilPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorListelePenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorListelePenceresi.Designer.cs">
+      <DependentUpon>DoktorListelePenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorPenceresi.Designer.cs">
+      <DependentUpon>DoktorPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisPenceresi.Designer.cs">
+      <DependentUpon>GirisPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaEklePenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaEklePenceresi.Designer.cs">
+      <DependentUpon>HastaEklePenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaKullaniciPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaKullaniciPenceresi.Designer.cs">
+      <DependentUpon>HastaKullaniciPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaPenceresi.Designer.cs">
+      <DependentUpon>HastaPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaSilGuncellePenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaSilGuncellePenceresi.Designer.cs">
+      <DependentUpon>HastaSilGuncellePenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IlacDuzenlePenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IlacDuzenlePenceresi.Designer.cs">
+      <DependentUpon>IlacDuzenlePenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IlacListePenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IlacListePenceresi.Designer.cs">
+      <DependentUpon>IlacListePenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="il_ilceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>il_ilceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MuhasebePenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuhasebePenceresi.Designer.cs">
+      <DependentUpon>MuhasebePenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelEkleGüncelleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelEkleGüncelleSil.Designer.cs">
+      <DependentUpon>PersonelEkleGüncelleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelListelePenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelListelePenceresi.Designer.cs">
+      <DependentUpon>PersonelListelePenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelPenceresi.Designer.cs">
+      <DependentUpon>PersonelPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandevuEklePenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandevuEklePenceresi.Designer.cs">
+      <DependentUpon>RandevuEklePenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandevuGecmisGuncellemePenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandevuGecmisGuncellemePenceresi.Designer.cs">
+      <DependentUpon>RandevuGecmisGuncellemePenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandevuGecmisPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandevuGecmisPenceresi.Designer.cs">
+      <DependentUpon>RandevuGecmisPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandevuGirisiPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandevuGirisiPenceresi.Designer.cs">
+      <DependentUpon>RandevuGirisiPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaniDuzenlePenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaniDuzenlePenceresi.Designer.cs">
+      <DependentUpon>TaniDuzenlePenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaniListePenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaniListePenceresi.Designer.cs">
+      <DependentUpon>TaniListePenceresi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminEkleSilGuncelle.resx">
+      <DependentUpon>AdminEkleSilGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPenceresi.resx">
+      <DependentUpon>AdminPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorEkleGuncelleSilPenceresi.resx">
+      <DependentUpon>DoktorEkleGuncelleSilPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorListelePenceresi.resx">
+      <DependentUpon>DoktorListelePenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorPenceresi.resx">
+      <DependentUpon>DoktorPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisPenceresi.resx">
+      <DependentUpon>GirisPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisPenceresi.zu.resx">
+      <DependentUpon>GirisPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaEklePenceresi.resx">
+      <DependentUpon>HastaEklePenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaKullaniciPenceresi.resx">
+      <DependentUpon>HastaKullaniciPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaPenceresi.resx">
+      <DependentUpon>HastaPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaSilGuncellePenceresi.resx">
+      <DependentUpon>HastaSilGuncellePenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IlacDuzenlePenceresi.resx">
+      <DependentUpon>IlacDuzenlePenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IlacListePenceresi.resx">
+      <DependentUpon>IlacListePenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuhasebePenceresi.resx">
+      <DependentUpon>MuhasebePenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelEkleGüncelleSil.resx">
+      <DependentUpon>PersonelEkleGüncelleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelListelePenceresi.resx">
+      <DependentUpon>PersonelListelePenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelPenceresi.resx">
+      <DependentUpon>PersonelPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RandevuEklePenceresi.resx">
+      <DependentUpon>RandevuEklePenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandevuGecmisGuncellemePenceresi.resx">
+      <DependentUpon>RandevuGecmisGuncellemePenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandevuGecmisPenceresi.resx">
+      <DependentUpon>RandevuGecmisPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandevuGirisiPenceresi.resx">
+      <DependentUpon>RandevuGirisiPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaniDuzenlePenceresi.resx">
+      <DependentUpon>TaniDuzenlePenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaniListePenceresi.resx">
+      <DependentUpon>TaniListePenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="clinicDataSet.xsc">
+      <DependentUpon>clinicDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="clinicDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>clinicDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="clinicDataSet.xss">
+      <DependentUpon>clinicDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="clinicDataSet1.xsc">
+      <DependentUpon>clinicDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="clinicDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>clinicDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="clinicDataSet1.xss">
+      <DependentUpon>clinicDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="il_ilceDataSet.xsc">
+      <DependentUpon>il_ilceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="il_ilceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>il_ilceDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="il_ilceDataSet.xss">
+      <DependentUpon>il_ilceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\yenile.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
